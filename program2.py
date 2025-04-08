@@ -9,6 +9,10 @@ class NameAddress:
 
         self.button.pack()
 
+        self.destroy_button = tkinter.Button(self.window, text='Quit', command=self.window.destroy)
+
+        self.destroy_button.pack()
+
         tkinter.mainloop()
 
     def reveal(self):
